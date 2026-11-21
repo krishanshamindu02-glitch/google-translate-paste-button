@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Paste for Google Translate",
+  "version": "1.0.2",
+  "description": "Adds a convenient one-click Paste button inside the Google Translate text box.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://translate.google.com/*", "https://translate.google.lk/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
